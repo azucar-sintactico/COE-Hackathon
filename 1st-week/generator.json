@@ -1,0 +1,12 @@
+[
+  '{{repeat(5, 7)}}',
+  {
+    id: '{{index()}}',
+    isActive: '{{bool()}}',
+    picture: 'http://placehold.it/32x32',
+    name: '{{company()}}',
+    phone: '+1 {{phone()}}',
+    address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+    content: '{{lorem(1, "paragraphs")}}'
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "coe-hackathon",
+  "description": "",
+  "main": "README.md",
+  "authors": [
+    "Carlos David G. Nexans <me@cnexans.com> (http://cnexans.com)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cnexans/coe-hackathon",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "install": {
+    "path": "vendor",
+    "sources": {
+      "bootstrap": [
+          "bower-components/bootstrap/dist/**"
+      ]
+    }  
+  }
+  
+}
