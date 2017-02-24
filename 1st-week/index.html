@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>COE Hackathon 1st week</title>
-    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/bootstrap.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body,html{
+            margin: 0;
+            padding: 0 16px;
+            overflow: hidden;
+            background: #000;
+            margin-top: 16px;
+        }
+        ul{
+            border: solid 1px #666;
+        }
+        ul li {
+            border: solid 1px #666;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background: #333;
+            cursor: pointer;
+        }
+        ul li.active{
+            background: #111;
+        }
+
+        div.content-container > div {
+            border: solid 1px #666;
+            padding: 16px;
+            color: #ccc;
+            overflow: hidden;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            border: solid 1px #666;
+            float: left;
+            margin: 0 16px 0 0;
+        }
+        p, address {
+            padding: 0 16px 0 0;
+            position: relative;
+        }
+
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="menu-container"></div>
         <div class="content-container"></div>
     </div>
+    <script src="./utils.js"></script>
     <script src="./index.js"></script>  
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
