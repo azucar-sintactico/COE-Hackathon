@@ -81,7 +81,7 @@ AppComponent.factory = (selector) => {
   return (data) => {
     return new AppComponent(
       data,
-      document.querySelector('.wrapper')
+      document.querySelector(selector)
     )
   }
 }
