@@ -24,7 +24,7 @@ Las reglas son:
 Se cuenta con un archivo index.html que representa nuestro sitio web, un styles.css en el cual
 podemos agregar estilos si así lo deseamos y un index.js como punto de entrada para comenzar a programar.
 
-Para levantar un servidor y trabajar, primero haber corrido *npm install* en la raíz de éste repositorio
+Para levantar un servidor y trabajar, primero se debe correr *npm install* en la raíz de éste repositorio
 luego de ésto, tenemos dos opciones:
 
 * Correr *gulp server* y acceder a nuestro espacio de trabajo en [http://localhost:8000/1st-week/index.html]
