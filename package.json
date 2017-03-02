@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm install -g bower-installer && npm install -g gulp && npm install -g mocha",
-    "test-week2" : "mocha 2nd-week/Java-vs-Javascript/test.js || exit 0"
+    "test-week2" : "mocha 2nd-week/Java-vs-Javascript/test.js || exit 0",
+    "start" : "gulp server"
   },
   "repository": {
     "type": "git",
