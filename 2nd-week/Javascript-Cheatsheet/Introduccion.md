@@ -1,6 +1,6 @@
 
 
-Una lista colaborativa de de articulos acerca de JavaScript, y para empezar, pensemos ¿Que nos diferencia
+Una lista colaborativa de *articulos* acerca de JavaScript, y para empezar, pensemos ¿Que nos diferencia
 de otros lenguajes?
 
 Java: What if everything was an object?

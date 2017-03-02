@@ -13,4 +13,4 @@ Motivacion:
 
 * Aprender más del lenguaje en sí mismo
 * Aplicar distintos patrones de diseño
-* Estar más cerca del entorno del navegador en sí mismo (vainilla)
+* Estar más cerca del entorno del navegador (vainilla)
