@@ -59,11 +59,18 @@ var menuContainer = menu.appendChild(ul);
 for(var i in data) {
         // create an arbitrary li element
   var li = document.createElement('li'),
-     contenido = document.createTextNode(nombres); // create a textnode to the document
+     contenido = document.createTextNode('lala'); // create a textnode to the document
 
   li.appendChild(contenido); // append the created textnode above to the li element
   ul.appendChild(li); // append the created li element above to the ul element
 }
+
+for( var i=0;data.length;i++ ){
+  var noms = data[i].name;
+  console.log(noms);
+}
+
+
 
 //traer names
 var nombres = data.filter(function (n) {
