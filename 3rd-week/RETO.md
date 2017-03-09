@@ -7,29 +7,29 @@ paraliza el procesamiento del cliente y por ésta razón el lenguaje está muy o
 
 La forma más básica de programación asíncrona es el uso de **callbacks**, consideremos el siguiente código usando jQuery.
 
-´´´javascript
+```javascript
 var usersService = 'https://jsonplaceholder.typicode.com/users'
 $.get(usersService).then(function(response) {
     // Hacer algo con response!
     console.log(response);
 });
-´´´
+```
 
 O, sabiendo que las funciones en javascript son directamente valores que podemos pasar como argumento
 
-´´´javascript
+```javascript
 var showUsers = function(response) {
     // hacer algo con response
     console.log(response);
 }
 var usersService = 'https://jsonplaceholder.typicode.com/users'
 $.get(usersService).then(showUsers);
-´´´
+```
 
 Al principio, los callbacks son geniales para resolver problemas sencillos... pero luego... podemos entrar en el **callback hell**, cuando se anidan y sucede un error,
 es dificultoso encontrar el problema que lo causa. Un ejemplo de ésto es cuando, a partir de la respuesta de un AJAX, tenemos que hacer otro (cosa que puede ser bastante común)
 
-´´´javascript
+```javascript
 var userPostsService = 'https://jsonplaceholder.typicode.com/posts?userId=';
 var usersService = 'https://jsonplaceholder.typicode.com/posts';
 $.get(usersService).then(function(users) {
@@ -41,7 +41,7 @@ $.get(usersService).then(function(users) {
         })
     })
 });
-´´´
+```
 
 
 El presente reto consiste en rehacer el último ejemplo dado con ciertas variantes:
@@ -62,7 +62,7 @@ esta función devuelve una instancia de la clase *Promise* (ver documentación c
 
 Una Promise es un objeto que representa datos *que no sabemos el momento en que estarán disponibles* pero declaramos que hacer con ellos cuando lo estén. Damos un ejemplo sencillo 
 
-´´´javascript
+```javascript
 var promesaDeDatos = new Promise(function(resolve, reject) {
     window.setTimeout(function() {
         resolve('Llegaron mis datos');
@@ -73,7 +73,7 @@ promesaDeDatos.then(function(datos) {
     // hacer algo con los datos
     console.log(datos);
 });
-´´´
+```
 
 
 **Herramientas**
