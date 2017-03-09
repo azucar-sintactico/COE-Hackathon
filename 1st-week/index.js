@@ -16,7 +16,7 @@
                 pill.innerHTML = datum.name;
                 pill.className = (index === 0) ? 'active' : '';
                 ul.appendChild(pill);
-            console.log(datum.name);
+            //console.log(datum.name);
         });
         document.getElementsByClassName('menu-container')[0].appendChild(ul);
         return ul;
@@ -54,8 +54,9 @@
     function bindEvents(menu,container){
         [].forEach.call(menu.children,function(li){
             li.addEventListener('click',function(e){
+                
                 // querySelector sobre .active seria mas rapido?
-                [].forEach.call(menu.children,function(li){ li.classList.remove('active'); });
+                document.querySelector('li.active').classList.remove('active');
                 this.classList.add('active');
                 
                 // querySelector sobre :not(hide)?
