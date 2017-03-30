@@ -24,7 +24,9 @@ describe('traductor', () => {
       'otro_ejemplo',
       'estamos_en_mrm'
     ]
-    expect(salida).to.be.equal(correctas);
+    salida.forEach(function(valor, i) {
+      expect(valor).to.be.equal(correctas[i]);
+    })
   });
   it('Traduce correctamente identificadores de Java a JS', () => {
     salida = traducir([
@@ -35,7 +37,10 @@ describe('traductor', () => {
       'devuelvoUnJson',
       'unEjemplo',
     ]
-    expect(salida).to.be.equal(correctas);
+    salida.forEach(function(valor, i) {
+      expect(valor).to.be.equal(correctas[i]);
+    })
+    
   });
   it('Traduce correctamente identificadores mezclados', () => {
     salida = traducir([
@@ -52,6 +57,8 @@ describe('traductor', () => {
       'otro_ejemplo',
       'estamos_en_mrm'
     ]
-    expect(salida).to.be.equal(correctas);
+    salida.forEach(function(valor, i) {
+      expect(valor).to.be.equal(correctas[i]);
+    })
   });
 });
