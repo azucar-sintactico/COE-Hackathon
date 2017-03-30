@@ -1,0 +1,61 @@
+<html>
+	<head></head>
+	<body>
+		<script>
+			var array = [
+			  'devuelvo_un_json',
+			  'javascriptEsGenial',
+			  'un_ejemplo',
+			  'otroEjemplo',
+			  'estamosEnMRM'
+			];
+			console.log(array);
+			
+			console.time('time test')
+			traducir(array);
+
+			function traducir(e){
+				var nuevoArreglo = [];
+				var variableCambiada = [];
+
+				for (var i = 0; i < e.length; i++){
+					var str = e[i].split("");
+					var variableCambiada = [];
+					
+					for (var j = 0; j < str.length; j++){
+						var unCaracter = str[j];
+						var next = str[j + 1];	
+						var cadenaMayus;				
+						var guionBajo;
+						
+						if(str[j] === str[j].toUpperCase()){
+							if(!(str[j] == '_')){
+								if(cadenaMayus){
+									unCaracter = str[j].toLowerCase();
+								}else{
+									cadenaMayus = (next == undefined || next == next.toUpperCase() ? true : false)
+									variableCambiada.push('_')
+									unCaracter = str[j].toLowerCase();
+								}
+							}else{
+								guionBajo = true;
+								unCaracter = "";
+							}
+						}else{
+							if(guionBajo){
+								unCaracter = unCaracter.toUpperCase();
+								guionBajo = false;
+							}
+						}
+
+						variableCambiada.push(unCaracter)
+					}
+					console.log(variableCambiada.join(''))
+					
+				}
+
+			}
+			console.timeEnd('time test')
+		</script>
+	</body>
+</html>
