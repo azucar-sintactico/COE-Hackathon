@@ -8,8 +8,8 @@ function Game() {
 		//config('Press OK to begin');
 		// const buttonStart = document.querySelector('.buttonStart');
 		this.board = [[0, 0, 0],
-				          [0, 0, 0],
-			          	[0, 0, 0]];
+				      [0, 0, 0],
+			          [0, 0, 0]];
 		this.currentPlayer = 1;
 	}
 
