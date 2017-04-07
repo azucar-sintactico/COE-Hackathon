@@ -29,12 +29,13 @@ gridComponent.prototype.containerGenerator = function() {
 gridComponent.prototype.renderSquare = function(i, j) {
   const square = document.createElement('div')
   square.classList.add('square')
-  if (this.state[i, j] === 1) square.innerHTML = 'X'
-  else if(this.state[i, j] == 2) square.innerHTML = 'O'
+  if (this.state[i][j] === 1) square.innerHTML = 'X'
+  else if(this.state[i][j] == 2) square.innerHTML = 'O'
   square.style.left = (i * 100) + 'px'
   square.style.top = (j * 100) + 'px'
   square.setAttribute('data-x', i)
   square.setAttribute('data-y', j)
+  square.setAttribute('data-player', this.state[i][j])
   this.container.appendChild(square)
 }
 

@@ -8,13 +8,12 @@ function Game() {
 		//config('Press OK to begin');
 		// const buttonStart = document.querySelector('.buttonStart');
 		this.board = [[0, 0, 0],
-				      [0, 0, 0],
-			          [0, 0, 0]];
+				          [0, 0, 0],
+			            [0, 0, 0]];
 		this.currentPlayer = 1;
 	}
 
 	this.play = function(x, y) {
-
 		var isAvailable = this.positionIsAvailable(x, y)
 		if ( isAvailable ) {
 			// jugamos
@@ -29,6 +28,13 @@ function Game() {
 		var bc = this.board;
 		
 		// diagonal
+		//var jugador = undefined;
+		//var estaRepetido = true;
+		//for (var i = 0; i < 2; i++) {
+		//	if (typeof jugador === 'undefined') jugador = bc[i][i]
+		//	else estaRepetido = estaRepetido && jugador === bc[i][i];
+		//}
+
 		if (bc[0][0] == bc[1][1] && bc[1][1] == bc[2][2] && (bc[0][0] == 1 || bc[0][0] == 2)) return true;
 		if (bc[0][2] == bc[1][1] && bc[1][1] == bc[2][0] && (bc[0][2] == 1 || bc[0][2] == 2)) return true;
 		
@@ -47,6 +53,7 @@ function Game() {
 
 
 	this.gameWinner = function() {
+		var bc = this.board;
 		// diagonal
 		if (bc[0][0] == bc[1][1] && bc[1][1] == bc[2][2] && (bc[0][0] == 1 || bc[0][0] == 2)) return bc[0][0];
 		if (bc[0][2] == bc[1][1] && bc[1][1] == bc[2][0] && (bc[0][2] == 1 || bc[0][2] == 2)) return bc[0][2];

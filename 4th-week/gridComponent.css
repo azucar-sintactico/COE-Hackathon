@@ -10,7 +10,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: #bcbcbc;
+  background: #fff;
 }
 
 .grid-component .square {
@@ -21,4 +21,5 @@ body {
   height: 96px;
   position: absolute;
   font-family: serif;
+  color: black;
 }
