@@ -20,6 +20,6 @@ body {
   width: 96px;
   height: 96px;
   position: absolute;
-  font-family: serif;
-  color: black;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
 }
