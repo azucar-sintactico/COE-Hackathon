@@ -1,24 +1,24 @@
 body {
-  background: #FCE4EC;
+  background: #fff;
 }
 
 
 .grid-component {
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate3d(-50%, - 50%, 0);
-  background: #3F51B5;
+  transform: translateX(-50%) translateY(-50%);
+  background: #bcbcbc;
 }
 
 .grid-component .square {
   font-size: 80px;
-  line-height: 196px; /* 200px - 4px de borde */
+  line-height: 96px; /* 200px - 4px de borde */
   border: 2px solid #E91E63;
-  width: 200px;
-  height: 200px;
+  width: 96px;
+  height: 96px;
   position: absolute;
   font-family: serif;
 }

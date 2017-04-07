@@ -5,7 +5,7 @@ function Game() {
 
 	this.initialize = function( ) {
 		// Start game
-		config('Press OK to begin');
+		//config('Press OK to begin');
 		// const buttonStart = document.querySelector('.buttonStart');
 		this.board = [[0, 0, 0],
 				          [0, 0, 0],

@@ -4,6 +4,7 @@ function gridComponent(clickHandler, state) {
   this.state = state
   this.container = this.containerGenerator()
   this.attachEvents(clickHandler)
+  this.render();
 }
 
 gridComponent.prototype.attachEvents = function(clickHandler) {
@@ -30,8 +31,8 @@ gridComponent.prototype.renderSquare = function(i, j) {
   square.classList.add('square')
   if (this.state[i, j] === 1) square.innerHTML = 'X'
   else if(this.state[i, j] == 2) square.innerHTML = 'O'
-  square.style.left = (i * 200) + 'px'
-  square.style.top = (j * 200) + 'px'
+  square.style.left = (i * 100) + 'px'
+  square.style.top = (j * 100) + 'px'
   square.setAttribute('data-x', i)
   square.setAttribute('data-y', j)
   this.container.appendChild(square)
